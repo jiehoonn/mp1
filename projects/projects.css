@@ -34,6 +34,71 @@
     width: 100%;
 }
 
+.calculator {
+    background-color: #EFF2F9;
+    border: 2px solid #6E7F8D;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+.calculator h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6E7F8D;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.calculator-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.calculator-input h3 {
+    grid-column: 1 / -1;
+    margin-bottom: 15px;
+}
+
+.calculator-input input {
+    padding: 12px;
+    border: 2px solid #6E7F8D;
+    border-radius: 6px;
+    background-color: #EFF2F9;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #6E7F8D;
+}
+
+.calculator-input button {
+    padding: 12px;
+    border: 2px solid #6E7F8D;
+    border-radius: 6px;
+    background-color: #6E7F8D;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.calculator-output {
+    text-align: center;
+    padding: 15px;
+    background-color: #EFF2F9;
+    border: 2px solid #6E7F8D;
+    border-radius: 6px;
+}
+
+.calculator-output h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: #6E7F8D;
+    min-height: 30px;
+}
+
 
 header {
     padding: 10px;
@@ -72,6 +137,7 @@ main a {
 
 footer {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 footer p {
@@ -114,6 +180,16 @@ footer p {
         width: 100%;
         text-align: center;
     }
+
+    .calculator-input {
+        grid-template-columns: 1fr;
+    }
+
+    .calculator-input input,
+    .calculator-input button {
+        font-size: 18px;
+        padding: 15px;
+    }
 }
 
 @media screen and (max-width:645px) {
@@ -123,6 +199,19 @@ footer p {
 
     .content-right {
         width: 100%;
+    }
+
+    .calculator {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .calculator-input button {
+        font-size: 16px;
+    }
+
+    .calculator-output h4 {
+        font-size: 20px;
     }
 
     nav a {
