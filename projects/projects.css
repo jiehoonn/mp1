@@ -60,6 +60,14 @@
   margin-bottom: 15px;
 }
 
+.calculator-input label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #6e7f8d;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
 .calculator-input input {
   padding: 12px;
   border: 2px solid #6e7f8d;
@@ -179,6 +187,10 @@ footer p {
 
   .calculator-input {
     grid-template-columns: 1fr;
+  }
+
+  .calculator-input label {
+    font-size: 16px;
   }
 
   .calculator-input input,
